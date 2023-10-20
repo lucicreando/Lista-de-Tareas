@@ -1,0 +1,102 @@
+:root{
+    --redPink: #d1052a;
+    --pink: #f45572;
+    --veryGray: #888a8a;
+    --cian: #00ffff;
+    --white: #fff
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--redPink);
+}
+
+.imagen{
+    width: 250px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+h1{
+    margin-top: 200px;
+    color: var(--white);
+    text-align: center;
+}
+
+#stats {
+    margin: 10px;
+    text-align: center;
+    font-size: 1.4em;
+    color: var(--cian);
+}
+
+form{
+    width: 400px;
+    margin: 45px auto;
+    text-align: center;
+}
+
+form input[type="text"]{
+    background-color: #f45572;
+    color: var(--white);
+    border-style: none;
+    font-size: 1.5em;
+}
+
+form input[type="text"]::placeholder{
+    color: var(--white);
+    font-size: 0.8em;
+    text-align: left;
+}
+
+form input[type="text"]:focus{
+    outline: none;
+}
+
+form input[type="submit"]{
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+    color: var(--redPink);
+}
+
+form input[type="submit"]:hover{
+    background-color: var(--green);
+    cursor: pointer;
+    color: #f45572;
+}
+
+.list-container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.task-container{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--veryGray);
+}
+
+.closeBtn{
+    width: 15px;
+    height: 15px;
+}
+
+.closeBtn:hover{
+    cursor: pointer;
+}
+
